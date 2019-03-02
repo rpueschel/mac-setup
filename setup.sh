@@ -15,6 +15,9 @@ xcode-select --install
 # Install Brew Packages
 brew bundle install
 
+# setup oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # remove all items from dock
 defaults write com.apple.dock persistent-apps -array
 
