@@ -1,43 +1,73 @@
+tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-versions"
+#tap "homebrew/cask-versions"
 tap "homebrew/core"
-brew "awscli"
-brew "cask"
-brew "curl"
-brew "go"
-brew "dep"
-brew "git"
-brew "gnupg"
-brew "hyperkit"
-brew "jq"
-brew "kubernetes-cli"
-brew "kops"
-brew "maven"
-brew "minikube"
-brew "node"
-brew "pass"
-brew "ruby-build"
-brew "rbenv"
-brew "telnet"
-brew "terraform"
-brew "vim"
+tap "k14s/tap"
+
+# ZSH + iTerm
 brew "zsh"
 brew "zsh-completions"
-cask "authy"
-cask "datagrip"
-cask "db-browser-for-sqlite"
-cask "drawio"
-cask "goland"
-cask "google-chrome"
-cask "intellij-idea"
 cask "iterm2"
-cask "java11"
-cask "macdown"
-cask "microsoft-office"
-cask "nosqlclient"
-cask "postman"
+
+# Java
+cask "adoptopenjdk8"
+cask "adoptopenjdk11"
+cask "adoptopenjdk13"
+cask "adoptopenjdk15"
+brew "maven"
+
+# Go
+brew "go"
+brew "dep"
+
+# Docker
+cask "docker"
+
+# k8s
+brew "kubernetes-cli"
+brew "helm"
+brew "helmfile"
+brew "k14s/tap/kapp"
+brew "sops"
+brew "hyperkit"
+brew "minikube"
+brew "k9s"
+
+# AWS
+brew "awscli"
+brew "terraform"
+
+# Ruby
+brew "ruby-build"
+brew "rbenv"
+brew "ruby"
+
+# Node
+brew "node"
+brew "yarn"
+
+# Rust
+brew "rust"
+brew "rustup-init"
+
+# Jet Brains
+cask "datagrip"
+cask "goland"
+cask "intellij-idea"
 cask "pycharm"
+
+# Microsoft
+cask "microsoft-office"
+cask "microsoft-teams"
+cask "visual-studio-code"
+
+# Misc
+brew "jq"
+brew "telnet"
+cask "authy"
+cask "postman"
 cask "slack"
 cask "spotify"
-cask "visual-studio-code"
+cask "drawio"
+
